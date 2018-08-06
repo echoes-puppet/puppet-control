@@ -31,8 +31,8 @@ mod 'ntp',
 
 mod 'role',
   :git => 'https://github.com/echoes-puppet/puppet-role.git',
-  :branch => 'development'
+  :branch => 'master'
 
 mod 'profile',
   :git => 'https://github.com/echoes-puppet/puppet-profile.git',
-  :branch => 'development'
+  :branch => 'master'
