@@ -36,3 +36,7 @@ mod 'role',
 mod 'profile',
   :git => 'https://github.com/echoes-puppet/puppet-profile.git',
   :branch => 'master'
+
+mod 'nginx',
+  :git => 'https://github.com/echoes-puppet/puppet-nginx.git',
+  :ref => 'master'
