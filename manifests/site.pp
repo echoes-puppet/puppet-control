@@ -24,11 +24,11 @@ File { backup => false }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
-node 'ja2.mylabserver.com' {
-  notify { 'test-message-for-ja2':
-    message => 'This is ja2 using a node definition',
-  }
-}
+#node 'ja2.mylabserver.com' {
+#  notify { 'test-message-for-ja2':
+#    message => 'This is ja2 using a node definition',
+#  }
+#}
 
 node 'ja4' {
   notify { 'This matches the node name ja4': }
@@ -46,6 +46,7 @@ node 'ja4' {
 #}
 
 node default {
+  hiera_include('classes')
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
