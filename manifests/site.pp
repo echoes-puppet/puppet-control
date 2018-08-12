@@ -24,8 +24,8 @@ File { backup => false }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
-node 'ja4.mylabserver' {
-  notify { 'This matches the node name': }
+node 'ja4' {
+  notify { 'This matches the node name ja4': }
   # installing on video, but it's not installed on the server
   #class { 'java': }
 }
