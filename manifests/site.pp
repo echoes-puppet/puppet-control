@@ -30,9 +30,9 @@ node 'ja4.mylabserver' {
   #class { 'java': }
 }
 
-node /^ja4/ {
-  notify { "This is a regex node definition!": }
-}
+#node /^ja4/ {
+#  notify { "This is a regex node definition!": }
+#}
 
 #node 'ja1.mylabserver.com' {
 #  include pe_repo::platform::el_6_x86_64
